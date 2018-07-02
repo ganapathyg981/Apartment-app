@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #021423;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FxmlCon">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="1024.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/wide_xlrg_view-of-tump-from-river.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="errorcode" layoutX="479.0" layoutY="400.0" textFill="#ff6161">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <AnchorPane layoutX="317.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.88" prefHeight="186.0" prefWidth="380.0" style="-fx-background-color: #455a64;">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="98.0" layoutY="45.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/bfa_user_flat-circle-white-on-light-gray_512x512.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userblock" layoutX="137.0" layoutY="42.0" prefHeight="27.0" prefWidth="150.0" promptText="Username" style="-fx-background-color: #455a64; -fx-text-fill: white;">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passblock" layoutX="139.0" layoutY="89.0" prefHeight="27.0" prefWidth="150.0" promptText="Password" style="-fx-background-color: #455a64; -fx-text-fill: white;">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="button" layoutX="162.0" layoutY="136.0" mnemonicParsing="false" onAction="#Handleclick" style="-fx-background-color: #e53935;" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#cdbfbf" offset="0.9961240310077519" />
+                        <Stop color="#cdbfbf" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="99.0" layoutY="89.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/lock_512pxGREY.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="373.0" layoutY="91.0" text="WELCOME">
+         <font>
+            <Font size="56.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5355450236966824" endY="0.8436018957345972" startX="0.09952606635071093" startY="0.1137440758293839">
+               <stops>
+                  <Stop color="#38d056" />
+                  <Stop color="#a6a6ab" offset="0.9922480620155039" />
+                  <Stop color="#171743" offset="0.9961240310077519" />
+                  <Stop color="#7c3333" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
